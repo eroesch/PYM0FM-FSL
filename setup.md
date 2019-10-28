@@ -121,4 +121,17 @@ Visit the folder, and try to figure out what this is.
 > {: .solution}
 {: .challenge}
 
+Finally, what we can do is rename the folder to something more appropriate. Remember that you can always start over by redoing the above commands.
+
+~~~
+$ mv fsl_course_data_UNMODIFIED fsl_course_data
+$ ls
+~~~
+{: .language-bash}
+
+~~~
+fsl_course_data.tar.gz     fsl_course_data
+~~~
+{: .output}
+
 {% include links.md %}

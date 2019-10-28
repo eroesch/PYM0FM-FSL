@@ -1,5 +1,5 @@
 ---
-title: "fslview"
+title: "fslview and other useful tools"
 teaching: 10
 exercises: 5
 questions:
@@ -58,6 +58,8 @@ $ fslview &
 {: .language-bash}
 
 The "&" means that the program you asked for (fslview) runs in the background in the terminal (or shell), and you can keep typing other commands while it is running. If you had not done that then you would not be able to do anything else in the terminal until you killed fslview (or, alternatively, you could type control-z in the terminal and then "bg" to get fslview running in the background post-hoc).
+
+## Use fslview to visualise some data
 
 Load in the image example_func.nii.gz, by pressing File -> Open and selecting the image.
 
@@ -146,5 +148,17 @@ Because these images are in standard space we can turn on the atlas tools with T
 You can turn on summary images of atlases by double-clicking on the name inside the Atlases... popup window; have a play with that. Finally, bring up the Structures... window, turn on the two tickboxes, and then click around in the list of structures. For those atlases which are probabilistic, this shows a single structure at a time, with the full probability information shown as a gradation of colour. The Structures... window is useful when you know the name of a brain area from a paper or talk, but you don’t know where it is anatomically.
 
 Note that FSLview can also render 3D images of brains with activation shown. How to do this is documented in the online tutorial on the FSL website.
+
+## Other useful tools
+
+FSL contains a very wide variety of smaller tools collectively referred to as FSLUtils.
+You can find a list on the <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Fslutils">FSL Wiki</a>. One such tool, for instance is fslinfo.
+
+Type "fslinfo highres" and "fslinfo thresh_zstat1" and note their different image matrix dimensions (dim1-3 = X Y Z) and voxel sizes (pixdim1-3 = X Y Z).
+
+Note that some images (highres) are of integer datatype, while others (thresh_zstat1) are of floating point datatype. Integer means that the intensity values can only take on whole numbers - no fractions - raw image data is normally of this type. Floating point means that intensity values can be fractional - the result of applying most statistical processing algorithms to image data results in images of floating point type.
+
+
+{: .language-bash}
 
 {% include links.md %}

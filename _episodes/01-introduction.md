@@ -64,7 +64,7 @@ Hold the mouse button down in one of the view panels and move it around - see ho
 * the image intensity at the cursor is shown 
 
 <a href="{{ page.root }}/fig/fslview-modetoolbar.png">
-  <img src="{{ page.root }}/fig/fslview-modetooldbar.png"/>
+  <img src="{{ page.root }}/fig/fslview-modetoolbar.png"/>
 </a>
 
 Now click several times on the small upwards arrow [1] (on some computers the arrows are replaced with a small "+" and "-") by the scale control (currently showing "100%"). This is one way of controlling the zoom. If you click on the icon of a hand [3] you can drag a view around. You can reset the view settings by pressing on the button with the arrow on top of the magnifying glass [6]. You can also set the field-of-view of a panel by clicking on the button with the magnifying glass [5], and then click-and-dragging the mouse in a view panel. Return to "normal view mode" (as opposed to "move" or "zoom" mode) by clicking on the button with the small cross [2].
